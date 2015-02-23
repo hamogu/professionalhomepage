@@ -1,0 +1,84 @@
+{% set navigation_bar = [
+    ('index.html', 'Research'),
+    ('publications.html', 'Publications'),
+    ('cv.html', 'CV'),
+    ('codedata.html', 'Codes and Data'),
+    ('roman.html', 'Roman warship'),
+    ('contact.html', 'Contact')
+] -%}
+{% set active_page = active_page|default('Research') -%}
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="personal homepage" />
+  <meta name="keywords" content="astronomy,astrophysics,star formation" />
+  <meta name="author" content="Hans Moritz Guenther" />
+  <meta name="title" content="Hans Moritz G&uuml;nther - {{ active_page }}" />
+  <meta http-equiv="content-language" content="en-US" />
+  <meta name="creator" content="SAO-HEA" />
+  <meta name="keywords" content="SI, Smithsonian, Smithsonian Institute" />
+  <meta name="keywords" content="CfA, SAO, Harvard-Smithsonian, Center for Astrophysics" />
+  <meta name="keywords" content="HEA, HEAD, High Energy Astrophysics Division" />
+  <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="moritz.css" title="Origo" media="all" />
+  <title>Hans Moritz G&uuml;nther - {{ active_page }}</title>
+</head>
+
+<body class="light blue smaller freestyle01">
+<div id="layout">
+  <div class="row smaller">
+    <div class="col c4 smaller">
+      <h1><a href="index.html">Hans Moritz G&uuml;nther</a></h1>
+    </div>
+    <div class="col c4 aligncenter">
+      <p class="slogan">Research Scientist</p>
+    </div>
+    <div class="col c4 alignright">
+      <a href="http://space.mit.edu" class="logo mkilogo"></a>
+      <a href="http://web.mit.edu" class="logo mitlogo"></a>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col c12 aligncenter">
+      <img src="images/front.jpg" width="960" height="240" alt="" />
+    </div>
+  </div>
+ 
+  <div class="row">
+    <div class="col c12 alignleft">
+      <ul class="menu">
+        {% for href, caption in navigation_bar %}
+          <li><a{% if caption == active_page %} class="current"{% endif %}
+                href="{{ href|e }}">{{ caption|e }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+ 
+  <div class="row">
+    <div class="col c2">
+      {% block leftbar %}<p></p>{% endblock %}
+    </div>
+    <div class="col c8 alignjustify">
+      {% block content %}{% endblock %}
+    </div>
+    <div class="col c2">
+      {% block rightbar %}<p></p>{% endblock %}
+    </div>
+
+  </div>
+ 
+  <div id="footer" class="row">
+    <div class="col c12 aligncenter">
+      <h3>&copy; 2012-2015 Hans Moritz G&uuml;nther</h3> <a href="http://andreasviklund.com/templates/origo/">Template design</a> adapted from <a href="http://andreasviklund.com/">Andreas Viklund</a><br />
+			</p>
+    </div>
+  </div>
+ </div>
+</body>
+</html>

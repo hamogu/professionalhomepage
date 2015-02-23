@@ -1,0 +1,65 @@
+{% extends "templates/basic.html" %}
+{% set active_page = "CV" %}
+
+{% block leftbar %}
+<h4>Download<h4>
+<ul class="menu">
+  <li><a href="pdfs/cv.pdf">Detailed CV in pdf</a></li>
+</ul>
+{% endblock leftbar %}
+
+
+{% block content %}
+
+<h2>CV</h2>
+<h3>Positions</h3>
+<table border="0">
+  <tr>
+    <td>2015-now</td>
+    <td>Research Scientist at <a href="http://space.mit.edu">MIT Kavli Institute</a> / CXC </td>
+  </tr>
+  <tr>
+    <td>2010-2014</td>
+    <td>Post-Doc at <a href="http://www.cfa.harvard.edu">Harvard-Smithsonian Center for Astrophysics</a>, Cambridge, MA, USA (supervisor: <a href="http://hea-www.harvard.edu/~swolk/">S. Wolk</a>)</td>
+  </tr>
+  <tr>
+    <td>2009</td>
+    <td><a href="http://www.hs.uni-hamburg.de">Hamburger Sternwarte</a>, Hamburg, Germany (supervisor: J. H. M. M. Schmitt)</td>
+  </tr>
+</table>
+
+<p></p>
+
+<h3>Education</h3>
+<table border="0">
+  <tr>
+    <td>2006-2009</td>
+    <td><strong>Doctoral thesis work</strong> at the Hamburger Sternwarte, Hamburg, Germany (advisor: J. H. M. M. Schmitt; grade: “sehr gut” (very good))</td>
+  </tr>
+  <tr>
+    <td>2008</td>
+    <td><strong>Visiting researcher</strong> at the University of Virginia, Charlottesville</td>
+  </tr>
+  <tr>
+    <td>2005</td>
+    <td><strong>Diploma</strong> in Physics (grade: "ausgezeichnet" (excellent))</td>
+  </tr>
+  <tr>
+    <td>2004-2005</td>
+    <td><strong>Diploma thesis work</strong> at the Hamburger Sternwarte (topic: Structure and X-ray emission of the accretion shock in classical T Tauri stars)</td>
+  </tr>
+  <tr>
+    <td>2004</td>
+    <td><strong>Summer student</strong> at CERN, Geneva, Switzerland (topic: Verification of fission processes in the Geant4 software)</td>
+  </tr>
+  <tr>
+    <td>2000-2005</td>
+    <td><strong>Undergraduate student</strong> at University of Hamburg, Germany (Major: Physics, Minor: Astronomy)</td>
+  </tr>
+  <tr>
+    <td>2002-2003</td>
+    <td><strong>Undergraduate student</strong> at Imperial College London, United Kingdom</td>
+  </tr>
+</table>
+ 
+{% endblock content %}

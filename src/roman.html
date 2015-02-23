@@ -1,0 +1,38 @@
+{% extends "templates/basic.html" %}
+{% set active_page = "Roman warship" %}
+
+{% block leftbar %}
+<h4>More information<h4>
+<ul class="menu">
+  <li><a href="http://www.hs.uni-hamburg.de/DE/Ins/Per/Guenther/Galeere/index.html">Results</a></li>
+  <li><a href="https://www.youtube.com/watch?v=8nV16slhP_s">youtube 1</a>
+  <li><a href="https://www.youtube.com/watch?v=kgkOQRDDyNc">youtube 2</a>
+  <li><a href="http://lusoriarhenana.de/">Lusoria Rhenana</a>
+  <li><a href="https://github.com/hamogu/NX2">Python code</a></li>
+  <li><a href="https://maps.google.de/maps?hl=de&q=http://www.hs.uni-hamburg.de/DE/Ins/Per/Guenther/Galeere/_downloads/080505.kml">Exemplary map for warship test</a></li>
+</ul>
+{% endblock leftbar %}
+
+
+{% block content %}
+
+<h2>The roman warship project</h2>
+<div class="figcaption">
+<img src="images/galleresegel.jpg" width=205 height=273 border=0 alt="War galley with sail up"/><br>
+Navis Lusoria under sail on the Danube
+</div>
+
+<p>There are other things out there than just astrophysics. Here I present a project where I and another astrophysisist collaborate with Prof. Sch&auml;fer (Department of History, Universit&auml;t Hamburg 2005-2008; Department of History, Universit&auml;t Trier 2008-present) </p>
+<p>In this project we aim to obtain reliable numerical characteristics of Roman warships. Antique texts have revealed a large number of facts about the fleet the Roman empire possessed in the first centuries of the first millennium, but measured and proven numbers e.g. on the speed of these vessels are mostly unknown. </p>
+<p>Therefore, two vessels were reconstructed in the original scale according to the archaeological excavations. Both original ships were uncovered along German rivers, the Rhine and Danube. In that time they were used to patrol the German border and protect the Roman empire against German invasions. The pictures above show the &bdquo;Navis Lusoria&ldquo; build in 2004 mooring close the Regensburg on the Donau and in full sail during our measurements.</p>
+<div class="figcaption" style="float:left;">
+<img src="images/gallere.jpg" width=282 height=211 border=0 alt="ship moored on the river banks" class="intext" style="float: left;"/><br>
+Navis Lusoria mooring on the river bank
+</div>
+<p>In 2005 we set out to test how long it needs to train a new team to handle the oars (about a week). In 2006 we joined the project as full collaborators, when we started to take data with automated equipment (wind direction and speed, GPS data and boat speed). Our astrophysical experience in handling large datasets and to analyse a time series greatly enhanced the scientific outcome of the experiment. In the first year, we wrote a software in IDL to extract parameters to characterise the boat, such as the maximum speed and a polar diagram of boat speeds depending on the angle and the wind speed; we have now modernized this <a href="https://github.com/hamogu/NX2">software in python</a>. </p>
+<div class="figcaption"><img src="images/galley_ratzeburg.jpg" width=170 height=184 border=0 alt="Galley with full sail in front of Church"><br>
+Oberstimm on the Ratzeburger See
+</div>
+<p>In 2007 another, older type, named &bdquo;Oberstimm I&ldquo; after the place where the wreck was unearthed, was reconstructed in Hamburg, mostly by students and supported by two professional boat builders.</p>
+<p>The results are published in two <a href="publications.html#books">books</a>. I also prepared an extensive collection of maps for all recorded journeys and and some results <a href="http://www.hs.uni-hamburg.de/DE/Ins/Per/Guenther/Galeere/index.html">here (in German)</a>. Further results and a documentation of the python software that I am developing to analyse the data will become available at that website when the data analysis is finished.
+{% endblock content %}

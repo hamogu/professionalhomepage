@@ -31,7 +31,7 @@ body.wider #layout {margin:40px auto 0; width:1200px;}
 /* Grid classes, fixed width, 960px with 12 columns */
 .col {float:left; margin:0 10px; overflow:hidden; float:left; display:inline;}
 .col img {max-width:100%;}
-.row {width:960px; margin:20px auto 0; overflow:hidden;}
+.row {width:960px; margin:10px auto 0; overflow:hidden;}
 .row .row {margin:0 -10px; width:auto;	display:inline-block;}
 .c1 {width:60px;}
 .c2 {width:140px;}
@@ -63,7 +63,7 @@ body.wider .c12 {width:1180px;}
 
 /* Menu list styles */
 ul.menu {list-style:none; margin:0; padding:10px 0; border-top:1px solid #333;}
-ul.menu li {list-style:none; text-align:center; font-size:1.2em; margin:0 0 10px; padding:0 0 8px 0; color:#888; border-bottom:1px solid #333;}
+ul.menu li {list-style:none; text-align:center; font-size:1.2em; margin:0 0 10px; padding:0 0 8px 0; color:#888; border-bottom:1px solid #333; float:left;}
 ul.menu li a {font-size:1.2em; font-weight:400;}
 ul.menu li a:hover {color:#eee; text-decoration:none;}
 
@@ -102,24 +102,20 @@ body.light #footer a:hover {color:#444; border-bottom:1px dotted #eee;}
 /* Alternate colors, apply by adding class="blue" (or any of the other available colors) to the body HTML element */
 body.blue a {color:#3288a8;}
 body.blue h1, body.blue h2, body.blue h3 {color:#3288a8;}
-body.pink a {color:#f06ba0;}
-body.pink h1, body.pink h2, body.pink h3 {color:#f06ba0;}
-body.orange a {color:#e58c24;}
-body.orange h1, body.orange h2, body.orange h3 {color:#e58c24;}
 
 /* Freestyle01 additions */
 body.freestyle01 {font:84% Tahoma,sans-serif;}
 body.freestyle01 #layout {margin:20px auto 0; width:960px;}
 body.freestyle01 h1, body.freestyle01 h2, body.freestyle01 h3, body.freestyle01 ul.menu li a
 {font-family: 'Dosis', sans-serif; text-transform:uppercase;}
-body.freestyle01 p.slogan {font-family: 'Dosis', sans-serif; text-transform:uppercase; margin-top:10px; font-size:1.4em;}
+body.freestyle01 p.slogan {font-family: 'Dosis', sans-serif; text-transform:uppercase; margin-top:15px; font-size:1.4em;}
 body.freestyle01 h1 {line-height:1.7em;}
 body.freestyle01 h1 {font-size:2.6em;}
 body.freestyle01 h2 {font-size:1.8em;}
 body.freestyle01 h3 {font-size:1.3em;}
 body.freestyle01 ul.menu {list-style:none; margin:0 0 15px 0; border:0; padding:0; position:relative;}
-body.freestyle01 ul.menu li {list-style:none; text-align:left; font-size:1.2em; margin:0 0 1px; border:0; color:#888;}
-body.freestyle01 ul.menu li a {font-size:1em; color:#555; padding:7px 5px 7px 8px; border-left:5px solid #ccc; background-color:#eaeaea; display:block; font-weight:400;}
+body.freestyle01 ul.menu li {list-style:none; text-align:left; font-size:1.2em; margin:0 5px 1px 0; border:0; color:#888;}
+body.freestyle01 ul.menu li a {font-size:1em; color:#555; padding:7px 5px 7px 8px; background-color:#eaeaea; display:block; font-weight:400;}
 body.freestyle01 ul.menu li a:hover, body.freestyle01 ul.menu li a.current {color:#333; border-color:#3288a8; background-color:#dadada;text-decoration:none;}
 body.freestyle01 ul.menu ul.subpages {margin:9px 0 -10px 15px;}
 body.freestyle01 ul.menu ul.subpages a {font-size:0.8em; padding:4px 5px 4px 8px;}
@@ -127,3 +123,45 @@ body.freestyle01 #footer {font-size:0.9em; color:#999;}
 body.freestyle01 #footer p {color:#999;}
 body.freestyle01 #footer p a {color:#999;}
 body.freestyle01 #footer p a:hover {color:#555;}
+
+ul.github {list-style-image: url('images/github_small.png');}
+ul.github li {margin: 0 30px;}
+
+img.intext {float: right; padding: 8px}
+
+table tr td {padding: 2px;}
+
+/* Logo list styles */
+ul.logo {list-style:none; margin:0; padding:10px 0; border:0; float:left; postion:relative;}
+ul.logo li {list-style:none; text-align:center; font-size:1.2em; margin:0 0 10px; padding:0 0 8px 0; border:0; float:left; display:block;}
+
+
+.logo {
+ float:right;
+ margin-bottom: 0px;
+ width: 150px;
+ height:40px;
+ display:block;
+ }
+
+.mitlogo {
+ background:transparent url('images/MIT-gray.png') center top no-repeat;
+ margin-top: 10px;
+}
+
+.mitlogo:hover {
+   background-image: url('images/MIT-red.png');
+}
+
+.mkilogo {
+ background:transparent url('images/MKI.png') center top no-repeat;
+}
+
+div.figcaption {
+    float: right;
+    margin: 0 0 10px 10px;
+    padding: 5px;
+    border: 0px solid black;
+    text-align: center;
+    font-style: italic;
+}
