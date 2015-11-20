@@ -3,7 +3,7 @@
 '''Compile professional homepage
 
 This script compiles my professional homepage.
-If uses Jinja2 templates. There is a general template in /templates
+It uses Jinja2 templates. There is a general template in /templates
 The individual files are made with template inheritance in the /src directory.
 So far, no actual python code is required to fill values in the templates.
 The navigation bar is defined in templates/basic.html and it is assumed that
@@ -89,6 +89,9 @@ cp ../../my_poster/14_AAS224_Boston/poster_guenther.pdf {0}/14_AAS224.pdf
 cp ../../my_poster/14_CS18/poster_guenther.pdf {0}/14_CS18.pdf
 cp ../../my_talks/14_AAS223/guenther_AAS223.pdf {0}/14_AAS223.pdf
 cp ../../my_talks/14_Chandra/guenther_moritz.pdf {0}/14_Chandra.pdf
+cp ../../my_talks/15_AAS225/guenther.pdf {0}/15_AAS225.pdf
+cp ../../my_talks/15_HarvardHeidelberg/guenther_poster.pdf {0}/15_HarvardHeidelberg.pdf
+cp ../../my_talks/15_ESTEC/GuentherHM.pdf {0}/15_ESTEC.pdf
 
 # Copy Dimplomarbeit und Doktorarbeit
 cp ../../my_articles/diplomarbeit/diplom.pdf {0}/
