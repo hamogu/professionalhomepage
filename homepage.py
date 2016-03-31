@@ -49,6 +49,13 @@ for page in pagelist:
 # copy style sheet
 shutil.copy('moritz.css', outpath)
 
+# copy public PGP key
+datapath = os.path.join(outpath, 'data')
+if not os.path.exists(datapath):
+    os.makedirs(datapath)
+shutil.copy(os.path.join('data', 'hansmoritzguenther_public_key.asc'),
+            datapath)
+
 # copy images
 impath = os.path.join(outpath, 'images')
 if not os.path.exists(impath):
