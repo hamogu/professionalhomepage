@@ -93,7 +93,7 @@ cp ../../my_poster/IAUS243/iaus243poster.pdf {0}/IAUS243_proc.pdf
 cp ../../my_poster/rodos2008/proceedings/guenther.pdf {0}/08_rhodes_proc.pdf
 cp ../../my_poster/rodos2008/poster1.pdf {0}/08_rhodes_poster.pdf
 cp ../../my_poster/14_AAS224_Boston/poster_guenther.pdf {0}/14_AAS224.pdf
-cp ../../my_poster/14_CS18/poster_guenther.pdf {0}/14_CS18.pdf
+cp ../../my_poster/14_cs18/poster_guenther.pdf {0}/14_CS18.pdf
 cp ../../my_talks/14_AAS223/guenther_AAS223.pdf {0}/14_AAS223.pdf
 cp ../../my_talks/14_Chandra/guenther_moritz.pdf {0}/14_Chandra.pdf
 cp ../../my_talks/15_AAS225/guenther.pdf {0}/15_AAS225.pdf
