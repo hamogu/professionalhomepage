@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+from __future__ import print_function
 '''Compile professional homepage
 
 This script compiles my professional homepage.
@@ -41,10 +41,10 @@ if not os.path.exists(outpath):
     os.makedirs(outpath)
 
 for page in pagelist:
-    print "Working on {0}".format(page)
+    print("Working on {0}".format(page))
     template = env.get_template(page)
     with open(os.path.join(outpath, os.path.basename(page)), "w") as html_out:
-        html_out.write(template.render().encode('utf-8'))
+        html_out.write(template.render())
 
 # copy style sheet
 shutil.copy('moritz.css', outpath)
@@ -99,6 +99,9 @@ cp ../../my_talks/14_Chandra/guenther_moritz.pdf {0}/14_Chandra.pdf
 cp ../../my_talks/15_AAS225/guenther.pdf {0}/15_AAS225.pdf
 cp ../../my_talks/15_HarvardHeidelberg/guenther_poster.pdf {0}/15_HarvardHeidelberg.pdf
 cp ../../my_talks/15_ESTEC/GuentherHM.pdf {0}/15_ESTEC.pdf
+cp ../../my_poster/16_SPIE/poster.pdf {0}/16_SPIE_poster.pdf
+cp ../../my_poster/16_SPIE/article.pdf {0}/16_SPIE_article.pdf
+cp ../../my_poster/18_SPIE_Arcus/poster.pdf {0}/18_SPIE_poster.pdf
 
 # Copy Dimplomarbeit und Doktorarbeit
 cp ../../my_articles/diplomarbeit/diplom.pdf {0}/
@@ -113,3 +116,32 @@ cp ../../my_proposals/applications/listofpub.pdf {0}/
 '''.format(pdfpath)
 for command in copyshell.split('\n'):
     os.system(command)
+
+# copy pdfs
+prespath = os.path.join(outpath, 'presentations')
+if not os.path.exists(prespath):
+    os.makedirs(prespath)
+
+copyshell = '''
+# Copy talks and posters
+cp -r ../../my_talks/17_SPIE_ARCUS/talk-Arcus-SPIE17 {0}/ARCUS_SPIE17
+cp -r ../../my_talks/17_SPIE_REDSoX/talk-REDSOX-SPIE17 {0}/REDSoX_SPIE17
+cp -r ../../my_talks/18_SPIE_Lynx/talk-lynxXGS-SPIE18 {0}/Lynx_SPIE18
+'''.format(prespath)
+for command in copyshell.split('\n'):
+    os.system(command)
+
+
+# copy some content verbatim
+# This is mostly interactive content that I e.g. link to from a poster
+# with a URL or QR code.
+# (That's why that directory is called qr)
+# So, this directory might accumulate an unorganized collection of stuff.
+# but in the interest of linking, I want to keep that URLs short
+qrpath = os.path.join(outpath, 'qr')
+if not os.path.exists(qrpath):
+    os.makedirs(qrpath)
+
+filelist = glob(os.path.join('qr', '*'))
+for f in filelist:
+    shutil.copy(f, qrpath)

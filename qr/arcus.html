@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Arcus Simulations" />
+  <meta name="keywords" content="ray-tracing" />
+  <meta name="author" content="Hans Moritz G&uuml;nther" />
+  <title>Arcus with a monoenergetic input spectrum</title>
+  		
+<script type='text/javascript' src='http://www.x3dom.org/download/x3dom.js'> </script> 
+<link rel='stylesheet' type='text/css'
+      href='http://www.x3dom.org/download/x3dom.css'></link> 
+</head>
+
+<body>
+    <h1>Interactive 3D model for Arcus</h1>
+    <p>It takes a while to load the 3D data...</p>
+<div>
+      <x3d style='float: none;' width='100%' height='80%'> 
+	<scene> 
+	  <inline url="arcussingleenergy.x3d" nameSpaceName="singlenergy" mapDEFToID="true" onclick=''/>
+	</scene> 
+      </x3d> 
+  </div>
+  <p>
+    Basic design for ARCUS, showing a ray-trace for an on-axis point
+    source with a monochromatic emission at 0.5 keV = 24.8 Angstrom.
+    ARCUS has four channels
+    positioned in two pairs. Each pair of
+    channels shares an optical axis.
+    The two optical axes are shown here as thin blue
+    cylinders.
+  </p>
+
+  <p>
+    Rays start in the aperture, which consists of four rectangles
+    located above the SPO channels. Each channel has a number of SPO
+    modules, shown in green.
+    The modules have different dimensions depending on their distance
+    from their respective optical axis.
+    Photons bounce of their mirrors twice in a Wolter type I like
+    geometry. However, in this simulation the SPOs are somewhat
+    simplified such that the
+    reflection actually happens in a single plane, shown in white.
+    Rays are imaged onto detectors (yellow).
+  </p>
+
+  <p>
+    A closer look at the detectors shows that several
+    grating orders are detected at the same time.
+  </p>
+  <h3>&copy; 2018 MIT / Moritz G&uuml;nther</h3>
+</body>
+</html>
