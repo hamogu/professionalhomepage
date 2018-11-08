@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from __future__ import print_function
 '''Compile professional homepage
 
 This script compiles my professional homepage.
@@ -102,6 +101,9 @@ cp ../../my_talks/15_ESTEC/GuentherHM.pdf {0}/15_ESTEC.pdf
 cp ../../my_poster/16_SPIE/poster.pdf {0}/16_SPIE_poster.pdf
 cp ../../my_poster/16_SPIE/article.pdf {0}/16_SPIE_article.pdf
 cp ../../my_poster/18_SPIE_Arcus/poster.pdf {0}/18_SPIE_poster.pdf
+cp ../../my_poster/18_CS20/poster.pdf {0}/18_CS20_poster.pdf
+cp ../../my_talks/18_ESO_Christian/poster.pdf {0}/18_ESO_poster.pdf
+cp ../../my_talks/18_ESO_Christian/RWAur_Guenther_5min.pdf {0}/18_ESO_talk.pdf
 
 # Copy Dimplomarbeit und Doktorarbeit
 cp ../../my_articles/diplomarbeit/diplom.pdf {0}/
