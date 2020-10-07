@@ -1,0 +1,24 @@
+mission: Polarimetry
+description: ray-trace, polarimetry, astronomy
+children:
+  - 
+    caption: PiSoX
+    children:
+      - 
+        title: PiSoX
+        type: included
+        href: index
+        caption: Basics
+      - 
+        title: Layout and performance
+        type: notebook
+        href: GoSox
+        caption: Performance
+      - 
+        title: Tolerancing studies
+        type: notebook
+        href: PiSoXTolerances
+        caption: Tolerances
+
+
+ 

@@ -1,0 +1,68 @@
+mission: Arcus
+description: Arcus, ray-race, X-ray spectroscopy, astronomy
+children:
+  - 
+    title: Basic layout for Arcus
+    type: included
+    href: index
+    caption: Arcus Layout and definitons
+#  - 
+#    caption: 3D models
+#    children:
+#      - 
+#        title: Monoenergetic input spectrum
+#        type: x3d
+#        href: xsingleenergy
+#        caption: monochromatic
+#      - 
+#        title: Emission line spectrum
+#        type: x3d
+#        href: xeqpega
+#        caption: Emission Lines
+  - 
+    caption: Design
+    children:
+      - 
+        title: Definition of  Rowland torus
+        type: notebook
+        href: RowlandGeometry
+        caption: Rowland Geometry
+      - 
+        title: Parameters for Rowland Geometry
+        type: notebook
+        href: SelectRowlandParameters
+        caption: Rowland Parameters
+      - 
+        title: CCD placement
+        type: notebook
+        href: OptimizeDetectorPos
+        caption: CCD placement
+      - 
+        title: Numerically test focus
+        type: notebook
+        href: Testoffocus
+        caption: Numeric focus
+      -
+        title: Detailed boom simulations
+        type: notebook
+        href: 3vs4sidedboom
+        caption: 3 vs 4 sided boom
+
+  - 
+    caption: Performance
+    children:
+      - 
+        title: Predict R and Aeff
+        type: notebook
+        href: CATmerrit
+        caption: R, Aeff
+      - 
+        title: Tolerances
+        type: notebook
+        href: Tolerances
+        caption: Alignment tolerances
+      - 
+        title: Boom misalignment
+        type: notebook
+        href: BoomMisalignment
+        caption: Misalignment

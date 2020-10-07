@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% from 'navigation.html.j2' import navbar %}
+
+{% block navigation %}
+{{ navbar(pages, active_page) }}
+{% endblock %}
+  

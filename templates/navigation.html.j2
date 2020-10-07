@@ -1,0 +1,31 @@
+{% macro navbar(pages, active_page) -%}
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="../index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+	{% for level1 in pages %}
+	{% if level1.children is defined %}
+	<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle {% if level1.href == active_page %}active{% endif %}" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{level1.caption|e}}
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	    {% for level2 in level1.children %}
+            <a class="dropdown-item {% if level2.href == active_page %}active{% endif %}" href="{{level2.href|e}}.html">{{level2.caption|e}}</a>
+	    {% endfor %}
+          </div>
+	</li>
+	{% else %}
+	<li class="nav-item">
+          <a class="nav-link {% if level1.href == active_page %}active{% endif %}" href="{{level1.href|e}}.html">{{level1.caption|e}}</a>
+	</li>
+	{% endif %}
+	{% endfor %}
+      </ul>
+    </div>
+  </nav>
+{%- endmacro %}
