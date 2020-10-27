@@ -6,19 +6,15 @@ children:
     type: included
     href: index
     caption: Arcus Layout and definitons
-#  - 
-#    caption: 3D models
-#    children:
-#      - 
-#        title: Monoenergetic input spectrum
-#        type: x3d
-#        href: xsingleenergy
-#        caption: monochromatic
-#      - 
-#        title: Emission line spectrum
-#        type: x3d
-#        href: xeqpega
-#        caption: Emission Lines
+  -
+    caption: 3D models
+    children:
+      -
+        title: Interactive 3D views
+        type: notebook
+        href: 3Dview
+        caption: 3Dviews
+
   - 
     caption: Design
     children:
@@ -32,12 +28,17 @@ children:
         type: notebook
         href: SelectRowlandParameters
         caption: Rowland Parameters
-      - 
+      -
         title: CCD placement
         type: notebook
         href: OptimizeDetectorPos
         caption: CCD placement
-      - 
+      -
+        title: Offsets between channels
+        type: notebook
+        href: Channel_offset
+        caption: Channel positions
+      -
         title: Numerically test focus
         type: notebook
         href: Testoffocus
@@ -54,15 +55,10 @@ children:
       - 
         title: Predict R and Aeff
         type: notebook
-        href: CATmerrit
+        href: Performance_metrics
         caption: R, Aeff
       - 
         title: Tolerances
         type: notebook
         href: Tolerances
         caption: Alignment tolerances
-      - 
-        title: Boom misalignment
-        type: notebook
-        href: BoomMisalignment
-        caption: Misalignment
