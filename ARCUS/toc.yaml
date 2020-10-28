@@ -5,16 +5,12 @@ children:
     title: Basic layout for Arcus
     type: included
     href: index
-    caption: Arcus Layout and definitons
+    caption: Arcus
   -
-    caption: 3D models
-    children:
-      -
-        title: Interactive 3D views
-        type: notebook
-        href: 3Dview
-        caption: 3Dviews
-
+    title: Interactive 3D views
+    type: notebook
+    href: 3Dview
+    caption: 3Dviews
   - 
     caption: Design
     children:
@@ -53,10 +49,10 @@ children:
     caption: Performance
     children:
       - 
-        title: Predict R and Aeff
+        title: Resolving power and effective area
         type: notebook
         href: Performance_metrics
-        caption: R, Aeff
+        caption: Performance metrics
       - 
         title: Tolerances
         type: notebook
