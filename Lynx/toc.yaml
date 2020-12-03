@@ -1,0 +1,39 @@
+mission: Lynx/GGS
+keywords: Lynx, ray-trace, CAT grating, X-ray, spectrograph
+children:
+  - 
+    title: Basic layout for Lynx XGS
+    type: notebook
+    href: index
+    caption: Lynx
+  -
+    caption: XGS design
+    children:
+      -
+        title: Rowland Geometry
+        type: notebook
+        href: RowlandGeometry
+        caption: Rowland Geometry
+      -
+        title: Detector position
+        type: notebook
+        href: Placethedetector
+        caption: Detector placement
+  - 
+    caption: Studies and performance
+    children:
+      -
+        title: Sub-aperturing
+        type: notebook
+        href: Subaperturing
+        caption: Sub-aperturing
+      -
+        title: Alignment tolerances
+        type: notebook
+        href: Tolerances
+        caption: Alignment
+      -
+        title: Chirped gratings
+        type: notebook
+        href: Chirp
+        caption: Chrip
