@@ -7,10 +7,23 @@ children:
     href: index
     caption: Arcus
   -
-    title: Interactive 3D views
-    type: notebook
-    href: 3Dview
-    caption: 3Dviews
+    caption: How does is look?
+    children:
+      -
+        title: Interactive 3D views
+        type: notebook
+        href: 3Dview
+        caption: 3D views
+      -
+        title: Plots on the detector
+        type: notebook
+        href: Plots
+        caption: Plots
+      -
+        title: SPO plates / Grating bar alignment
+        type: notebook
+        href: DQ36
+        caption: SPO/CAT alignment
   - 
     caption: Design
     children:
