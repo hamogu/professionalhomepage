@@ -159,6 +159,7 @@ env = Environment(loader=FileSystemLoader(['templates',
 
 outpath = os.path.join(args.outpath, args.project)
 os.makedirs(outpath, exist_ok=True)
+print('Path for output:', outpath)
 
 with open(os.path.join(args.project, 'toc.yaml'), 'r') as f:
     conf = yaml.safe_load(f)
