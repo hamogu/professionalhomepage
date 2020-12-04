@@ -2,23 +2,37 @@ mission: Polarimetry
 description: ray-trace, polarimetry, astronomy
 children:
   - 
+    title: Ray-tracing for Polarimetry lab
+    type: included
+    href: index
+    caption: Polarimetry lab
+  - 
     caption: PiSoX
     children:
       - 
-        title: PiSoX
-        type: included
-        href: index
-        caption: Basics
+        title: PiSox
+        type: notebook
+        href: PiSox
+        caption: PiSoX basics
       - 
         title: Layout and performance
         type: notebook
-        href: GoSox
-        caption: Performance
+        href: PiSox_trades
+        caption: PiSoX trade studies
       - 
         title: Tolerancing studies
         type: notebook
         href: PiSoXTolerances
-        caption: Tolerances
+        caption: PiSoX tolerances
+  -
+    caption: Schematics
+    children:
+      -
+        title: bending
+        type: notebook
+        href: ExplainBending
+        caption: Why bending a grating is useful
+
 
 
  
