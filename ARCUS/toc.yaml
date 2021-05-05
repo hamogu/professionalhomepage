@@ -57,7 +57,6 @@ children:
         type: notebook
         href: 3vs4sidedboom
         caption: 3 vs 4 sided boom
-
   - 
     caption: Performance
     children:
@@ -71,3 +70,21 @@ children:
         type: notebook
         href: Tolerances
         caption: Alignment tolerances
+  - 
+    caption: ARF/RMF
+    children:
+      - 
+        title: ARF and RMF combined for all grating orders
+        type: notebook
+        href: SimSimple
+        caption: Combined grating orders
+      -
+        title: Introduction to order sorting
+        type: notebook
+        href: OrderSorting
+        caption: Why order sorting?
+      -
+        title: Sherpa simulations with order-crosstalk
+        type: notebook
+        href: SimMultiOrder
+        caption: Fake multiple orders (sherpa)
