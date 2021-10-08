@@ -1,0 +1,8 @@
+mission: Chandra
+description: Chandra, ray-race, X-ray spectroscopy, astronomy
+children:
+  -
+    title: Incomplete grating insertion
+    type: notebook
+    href: GratingInsertion
+    caption: Grating Insertion
