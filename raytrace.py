@@ -256,7 +256,7 @@ print("If this version is meant for publication, take the following steps:")
 print(" cd {}".format(args.outpath))
 print(" git add any_new_files")
 print(" git commit -am'My message here'")
-print(" scp -r * space:/space/web/home/guenther/{}".format(args.project))
+print(" scp -r * space:/space/web/home/guenther/".format(args.project))
 
 '''
 converting norebooks and inserting footer and nav bar
