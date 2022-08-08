@@ -1,0 +1,29 @@
+mission: Athena/XGS
+keywords: Athena, Plan B, ray-trace, CAT grating, X-ray, spectrograph
+children:
+  - 
+    title: Basic layout for Athena CAT XGS
+    type: notebook
+    href: index
+    caption: Athecat
+  -
+    caption: XGS design
+    children:
+      -
+        title: Rowland Geometry
+        type: notebook
+        href: RowlandGeometry
+        caption: Rowland Geometry
+      -
+        title: Detector position
+        type: notebook
+        href: Placethedetector
+        caption: Detector placement
+  - 
+    caption: Studies and performance
+    children:
+      -
+        title: Sub-aperturing
+        type: notebook
+        href: Subaperturing
+        caption: Sub-aperturing
